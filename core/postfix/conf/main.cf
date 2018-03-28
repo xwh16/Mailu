@@ -105,3 +105,7 @@ milter_default_action = tempfail
 ###############
 # Extra Settings
 ###############
+
+# mailstamp filter!
+content_filter = scan:{{ MAILSTAMPER_HOST }}:10026
+receive_override_options = no_address_mappings
